@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/Sign_up.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+        <title>안심 수</title>
+    </head>
+    <body>
+        <header>
+            <div class="header_wrapper">
+                <div class="gnb">
+                    <a href="#" class="gnb_menu">
+                        <img src="./img/lnb_1.png" alt="lang" />
+                        <div>Language</div>
+                    </a>
+                    <a href="#" class="gnb_menu">
+                        <img src="./img/lnb_2.png" alt="lang" />
+                        <div>Login</div>
+                    </a>
+                </div>
+
+                <div class="Title_space">
+                    <div class="toggle_btn">
+                        <input type="checkbox" name="toggle" id="toggle" />
+                        <label for="toggle">
+                            <img src="./img/btn.png" alt="toggle_img" />
+                        </label>
+                        <!-- 토글 메뉴 -->
+                        <div class="toggle_bar">
+                            <div class="toggle_close">
+                                <label for="toggle">
+                                    <img
+                                        src="./img/X_btn.png"
+                                        alt="toggle_img"
+                                    />
+                                </label>
+                            </div>
+                            <a href="#">상수도 정보</a>
+                            <a href="#">샘물 정보</a>
+                            <a href="#">랭킹</a>
+                            <a href="#">게시판</a>
+                            <a href="#">이벤트/공모</a>
+                            <a href="#">광고문의</a>
+                        </div>
+                    </div>
+
+                    <div class="title_Logo">
+                        <a href="./index.html"
+                            ><img src="./img/main_logo.png" alt=""
+                        /></a>
+                    </div>
+
+                    <div class="user_menu_mobile">
+                        <input
+                            type="checkbox"
+                            name="user_toggle"
+                            id="user_toggle"
+                        />
+                        <label class="user_toggle_btn" for="user_toggle">
+                            <img src="./img/lnb_2.png" alt="user_toggle_img" />
+                        </label>
+                        <div class="user_toggle_bar">
+                            <!-- USER 토글 메뉴 -->
+                            <div class="user_toggle_close">
+                                <label for="user_toggle">
+                                    <img
+                                        src="./img/X_btn.png"
+                                        alt="user_toggle_img"
+                                    />
+                                </label>
+                            </div>
+                            <a href="./index.html">로그인</a>
+                            <a href="./Sign_up.html">회원가입</a>
+                            <a href="#">마이페이지</a>
+                            <a href="#">개인정보수정</a>
+                            <a href="#">마이리스트</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="search_space">
+                    <div class="search_bar">
+                        <input
+                            type="text"
+                            name="search_text"
+                            id="search_text"
+                            placeholder="지역, 샘물 검색"
+                        />
+                        <img
+                            id="search_icon"
+                            src="./img/search.svg"
+                            alt="search_ico"
+                        />
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--  -->
+        <!--  -->
+        <!--  -->
+
+        <div class="Page_wrapper">
+            <div class="Title">
+                <div class="Title_container">
+                    <div>회원가입</div>
+                    <img src="./img/st_mini_logo.png" alt="" />
+                </div>
+            </div>
+            <div class="Dir">
+                홈&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;회원가입
+            </div>
+            <div class="sign-in_notice">
+                * 표시된 항목은 필수입력 항목입니다.
+            </div>
+            <div class="sign-in_Form">
+                <form name="Sign-in" method="post" action="넘어갈페이지로">
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">아이디</div>
+                        <input name="ID" id="ID" type="text" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">비밀번호</div>
+                        <input name="PW" id="PW" type="password" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">비밀번호 확인</div>
+                        <input name="PW_check" id="PW_check" type="password" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">닉네임</div>
+                        <input name="Nickname" id="Nickname" type="text" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">이메일</div>
+                        <input name="Email" id="Email" type="email" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div class="sign-in_Required">전화번호</div>
+                        <input name="ID" id="ID" type="text" />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div>생년월일</div>
+                        <input
+                            name="Birth"
+                            id="Birth"
+                            type="text"
+                            maxlength="6"
+                            placeholder="생년월일 6자리 입력"
+                        />
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div>성별</div>
+                        <div class="sign-in_GenderSelect">
+                            <div>
+                                <input
+                                    name="Gender"
+                                    id="Gender_Notselect"
+                                    type="radio"
+                                    value="not_checked"
+                                    checked="checked"
+                                />
+                                <label for="Gender_Notselect"> 선택안함 </label>
+                            </div>
+                            <div>
+                                <input
+                                    name="Gender"
+                                    id="Gender_Male"
+                                    type="radio"
+                                    value="male"
+                                />
+                                <label for="Gender_Male"> 남성 </label>
+                            </div>
+                            <div>
+                                <input
+                                    name="Gender"
+                                    id="Gender_Female"
+                                    type="radio"
+                                    value="Female"
+                                />
+                                <label for="Gender_Female"> 여성 </label>
+                            </div>
+                            <div>
+                                <input
+                                    name="Gender"
+                                    id="Gender_Other"
+                                    type="radio"
+                                    value="Other"
+                                />
+                                <label for="Gender_Other"> 이외 </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign-in_field">
+                        <div>주소</div>
+                        <div class="sign-in_Address">
+                            <div class="sign-in_Address_zipcode">
+                                <input
+                                    name="Zipcode"
+                                    id="zipcode"
+                                    type="text"
+                                    disabled
+                                />
+                                <button>우편번호검색</button>
+                            </div>
+                            <div class="sign-in_Address_address">
+                                <input
+                                    name="Address_1"
+                                    id="Address_1"
+                                    type="text"
+                                    disabled
+                                />
+                                <div>상세주소 입력</div>
+                                <input
+                                    name="Address_2"
+                                    id="Address_2"
+                                    type="text"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sign-up_btns">
+                        <input type="submit" value="회원가입" />
+                        <a href="index.html"
+                            ><input type="button" value="취소"
+                        /></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="ft_wrapper">
+                <div class="ft_title">
+                    <span class="ft_title_1">개인정보처리방침</span>
+                    <span class="ft_title_2">자주하는 질문</span>
+                </div>
+
+                <div class="ft_main_logo">
+                    <img src="./img/ft_main_logo.png" alt="ft_logo" />
+                </div>
+
+                <div class="ft_content">
+                    <div>
+                        <ul>
+                            <li>
+                                (41166)대국광역시 동구 화랑로 525
+                                영진직업전문학교 <br />
+                                TEL:053-983-8877 FAX:053-722-2423 <br />
+                                사업자번호: 502-95-07029701-835 <br />
+                                copyright © 대구국비지원 무료교육센터
+                                영진직업전문학교 <br />
+                                ALL Rights Reserved.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ft_sns">
+                        <img src="./img/ft_logo_blog.png" alt="" />
+                        <img src="./img/ft_logo_facebook.png" alt="" />
+                        <img src="./img/ft_logo_kakao.png" alt="" />
+                        <img src="./img/ft_logo_insta.png" alt="" />
+                        <img src="./img/ft_logo_youtube.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

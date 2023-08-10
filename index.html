@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>안심수</title>
+        <link rel="stylesheet" href="./css/common.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/section_1.css" />
+        <link rel="stylesheet" href="./css/section_2.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
+
+        <!-- 제이쿼리 -->
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- 스와이퍼 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header_wrapper">
+                <div class="gnb">
+                    <a href="#" class="gnb_menu">
+                        <img src="./img/lnb_1.png" alt="lang" />
+                        <div>Language</div>
+                    </a>
+                    <a href="#" class="gnb_menu">
+                        <img src="./img/lnb_2.png" alt="lang" />
+                        <div>Login</div>
+                    </a>
+                </div>
+
+                <div class="Title_space">
+                    <div class="toggle_btn">
+                        <input type="checkbox" name="toggle" id="toggle" />
+                        <label for="toggle">
+                            <img src="./img/btn.png" alt="toggle_img" />
+                        </label>
+                        <!-- 토글 메뉴 -->
+                        <div class="toggle_bar">
+                            <div class="toggle_close">
+                                <label for="toggle">
+                                    <img
+                                        src="./img/X_btn.png"
+                                        alt="toggle_img"
+                                    />
+                                </label>
+                            </div>
+                            <a href="#">상수도 정보</a>
+                            <a href="#">샘물 정보</a>
+                            <a href="#">랭킹</a>
+                            <a href="#">게시판</a>
+                            <a href="#">이벤트/공모</a>
+                            <a href="#">광고문의</a>
+                        </div>
+                    </div>
+
+                    <div class="title_Logo">
+                        <a href="./index.html"
+                            ><img src="./img/main_logo.png" alt=""
+                        /></a>
+                    </div>
+
+                    <div class="user_menu_mobile">
+                        <input
+                            type="checkbox"
+                            name="user_toggle"
+                            id="user_toggle"
+                        />
+                        <label class="user_toggle_btn" for="user_toggle">
+                            <img src="./img/lnb_2.png" alt="user_toggle_img" />
+                        </label>
+                        <div class="user_toggle_bar">
+                            <!-- USER 토글 메뉴 -->
+                            <div class="user_toggle_close">
+                                <label for="user_toggle">
+                                    <img
+                                        src="./img/X_btn.png"
+                                        alt="user_toggle_img"
+                                    />
+                                </label>
+                            </div>
+                            <a href="./index.html">로그인</a>
+                            <a href="./Sign_up.html">회원가입</a>
+                            <a href="#">마이페이지</a>
+                            <a href="#">개인정보수정</a>
+                            <a href="#">마이리스트</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="search_space">
+                    <div class="search_bar">
+                        <input
+                            type="text"
+                            name="search_text"
+                            id="search_text"
+                            placeholder="지역, 샘물 검색"
+                        />
+                        <img
+                            id="search_icon"
+                            src="./img/search.svg"
+                            alt="search_ico"
+                        />
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <!--  -->
+        <!--  -->
+        <!-- 바디시작  -->
+        <!--  -->
+        <!--  -->
+
+        <section class="section_1">
+            <div class="section_1_wrapper">
+                <!--  -->
+                <!-- 왼쪽 -->
+                <!--  -->
+
+                <div class="section_1_item_1">
+                    <div class="item_1_titleline">
+                        <div class="item_1_title">
+                            <img src="./img/st_logo.png" alt="title_head" />
+                            <div>OO동 수질정보</div>
+                        </div>
+                        <div class="location_select_btn">
+                            <a href="#">
+                                <img src="./img/st_wheel.png" alt="" />
+                                <div>지역선택</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="item_1_contents">
+                        <!-- 수원지 지역선택 -->
+                        <div>
+                            <form>
+                                <select name="select_si" id="select_si">
+                                    <option value="">시·도 선택</option>
+                                    <option value="대구광역시">
+                                        대구광역시
+                                    </option>
+                                </select>
+
+                                <select name="select_dodong" id="select_dodong">
+                                    <option value="">구·군 선택</option>
+                                    <option value="동구">동구</option>
+                                </select>
+
+                                <select name="select_si" id="select_si">
+                                    <option value="">동·읍·면 선택</option>
+                                    <option value="용계동">용계동</option>
+                                </select>
+                                <input type="submit" value="적용" />
+                            </form>
+                        </div>
+
+                        <!-- 수원지 정보 -->
+                        <div class="item_1_contents_box_1">
+                            <div class="contents_box1_1">
+                                <img src="./img/content_1_icon_1.png" alt="" />
+                                <div>OO댐</div>
+                            </div>
+                            <div class="contents_box1_2">
+                                <img src="./img/content_1_icon_2.png" alt="" />
+                                <div>OO정수장</div>
+                            </div>
+                            <div class="contents_box1_3">
+                                <img src="./img/content_1_icon_3.png" alt="" />
+                                <div>OO배수지</div>
+                            </div>
+                            <div class="contents_box1_4">
+                                <img src="./img/content_1_icon_4.png" alt="" />
+                                <div>OO동</div>
+                            </div>
+                        </div>
+
+                        <!-- 수원지 수질정보 -->
+                        <div class="item_1_contents_box_2">
+                            <div class="contents_box_2_item">
+                                <div>탁도</div>
+                                <div>그래프</div>
+                                <div>수치</div>
+                            </div>
+                            <div class="contents_box_2_item">잔류염소</div>
+                            <div class="contents_box_2_item">수소이온농도</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+                <!-- 오른쪽 -->
+                <!--  -->
+                <div class="section_1_item_2">
+                    <!-- 로그인 안했을때 -->
+                    <div class="item_2_logout">
+                        <div class="item_2_area">
+                            <div class="box_1">
+                                <div class="box_1_text">
+                                    <div class="box_1_text_Mobile">
+                                        <div>나만의&nbsp;</div>
+                                        <div>
+                                            <span class="drop_splash">
+                                                샘물
+                                                <img
+                                                    src="./img/st_mini_logo.png"
+                                                    alt=""
+                                                />
+                                            </span>
+                                            정보를
+                                        </div>
+                                    </div>
+                                    <div>등록하세요!</div>
+                                </div>
+                                <button class="box_1_btn" id="hideButton">
+                                    로그인 / 회원가입
+                                </button>
+                            </div>
+
+                            <div class="box_2">
+                                <div class="box_2_login_form">
+                                    <div class="login_form_title">
+                                        <img
+                                            src="./img/st_logo.png"
+                                            alt="title_head"
+                                        />
+                                        <div>로그인</div>
+                                    </div>
+                                    <form method="post">
+                                        <div class="input_wrapper">
+                                            <div class="login_input">
+                                                <div>아이디</div>
+                                                <input type="text" />
+                                            </div>
+                                            <div class="login_input">
+                                                <div>패스워드</div>
+                                                <input type="password" />
+                                            </div>
+                                        </div>
+                                        <input
+                                            class="iogin_btn"
+                                            type="submit"
+                                            value="로그인"
+                                        />
+                                    </form>
+                                    <div>
+                                        <div class="signin_area">
+                                            <a href="./Sign_up.html"
+                                                >회원가입</a
+                                            >
+                                            <p>|</p>
+                                            <a href="#">아이디·패스워드 찾기</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box_2_social_loginform">
+                                    <div class="login_form_title">
+                                        <img
+                                            src="./img/st_logo.png"
+                                            alt="title_head"
+                                        />
+                                        <div class="">SNS 로그인</div>
+                                    </div>
+                                    <div class="SNS_login_btn">
+                                        <a href="#"
+                                            ><img
+                                                src="./img/sns_api_kakao.png"
+                                                alt="kakao_login"
+                                        /></a>
+                                        <a href="#"
+                                            ><img
+                                                src="./img/sns_api_naver.png"
+                                                alt="naver_login"
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 로그인 했을때 -->
+                    <div class="item_2_login">
+                        <div class="item_2_titleline">
+                            <div class="item_2_title">
+                                <img src="./img/st_logo.png" alt="title_head" />
+                                <div>샘물정보</div>
+                            </div>
+                            <div class="location_select_btn">
+                                <a href="#">
+                                    <img src="./img/st_wheel.png" alt="" />
+                                    <div>마이페이지</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item_2_contents">
+                            <div class="item_2_box_1">1</div>
+                            <div class="item_2_box_2">2</div>
+                            <div class="item_2_box_3">3</div>
+                            <div class="item_2_box_4">4</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll_guide">
+                <img src="./img/scroll_guide.png" alt="" />
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="st2_title">
+                <p>
+                    <span>물 소식<img src="./img/st_mini_logo.png" /></span>
+                </p>
+            </div>
+
+            <div class="st2_wrapper">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">Slide 0</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div> -->
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <div class="st2_inner">
+                    <div class="st2_contens">
+                        <div class="ct_title">
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">소셜&뉴스</a></li>
+                                <li><a href="">행사&공모</a></li>
+                                <p><a href="">더보기+</a></p>
+                            </ul>
+                        </div>
+
+                        <div class="ct_contents">
+                            <div class="ct_1">
+                                <div class="ct_1-1">
+                                    <p>07</p>
+                                    <p>20</p>
+                                </div>
+                                <p class="ct_p">
+                                    '무라벨 생수' 무기질 함량은 어디에?
+                                </p>
+                            </div>
+                            <p class="ct_s_p">
+                                -무라벨생수,무기질 및 제조업체 확인
+                                어려워&middot;&middot;&middot;
+                            </p>
+                        </div>
+
+                        <div class="ct_2">
+                            <ul>
+                                <li>
+                                    &#8226;&nbsp;먹는샘물 총대장균군&middot;크롬
+                                    등 '세균'범벅<span>2023-07-19</span>
+                                </li>
+                                <li>
+                                    &#8226;&nbsp;수질부적합 생수를 '무라벨'로
+                                    판매한다고?<span>2023-07-19</span>
+                                </li>
+                                <li>
+                                    &#8226;&nbsp;무라벨생수'무기질함량은
+                                    어디에?<span>2023-07-19</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <di class="ct_2_but">
+                            <button>+ 더보기</button>
+                        </di>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 
+        <section class="section3">
+            <div class="wrapper">
+                <div class="item_box">
+                    <div class="img">
+                        <img src="./img/product_sample.png" alt="" />
+                    </div>
+                    <div class="txt">
+                        <div>
+                            <div>
+                                <p>asd</p>
+                                <p>asd</p>
+                            <div>500ml * 20</div>
+                        </div>
+                        <div>
+                            <div>logo</div>
+                            <div>14800 <span>원</span></div>
+                        </div>
+                    </div>
+                    <div class="AD">ad</div>
+                </div>
+            </div>
+        </section> -->
+
+        <footer>
+            <div class="ft_wrapper">
+                <div class="ft_title">
+                    <span class="ft_title_1">개인정보처리방침</span>
+                    <span class="ft_title_2">자주하는 질문</span>
+                </div>
+
+                <div class="ft_content">
+                    <div class="ft_main_logo">
+                        <img src="./img/ft_main_logo.png" alt="ft_logo" />
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>
+                                (41166)대국광역시 동구 화랑로 525
+                                영진직업전문학교 <br />
+                                TEL:053-983-8877 FAX:053-722-2423 <br />
+                                사업자번호: 502-95-07029701-835 <br />
+                                copyright © 대구국비지원 무료교육센터
+                                영진직업전문학교 <br />
+                                ALL Rights Reserved.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ft_sns">
+                    <img src="./img/ft_logo_blog.png" alt="" />
+                    <img src="./img/ft_logo_facebook.png" alt="" />
+                    <img src="./img/ft_logo_kakao.png" alt="" />
+                    <img src="./img/ft_logo_insta.png" alt="" />
+                    <img src="./img/ft_logo_youtube.png" alt="" />
+                </div>
+            </div>
+        </footer>
+
+        <!--  -->
+        <!-- 이벤트  -->
+        <!--  -->
+
+        <!-- 스크롤로 헤더 조절 -->
+        <script>
+            window.addEventListener("scroll", function () {
+                const searchSpace = document.querySelector(".search_space");
+
+                if (window.scrollY > 64) {
+                    searchSpace.classList.add("hidden"); // 스크롤 시 클래스 추가하여 숨김
+                } else {
+                    searchSpace.classList.remove("hidden"); // 스크롤이 위로 올라갈 때 클래스 제거하여 표시
+                }
+            });
+        </script>
+
+        <!-- 클릭으로 페이지 조절 -->
+        <script>
+            const hideButton = document.getElementById("hideButton");
+            const box1 = document.querySelector(".box_1");
+
+            hideButton.addEventListener("click", function () {
+                box1.style.display = "none"; // 버튼 클릭 시 box_1의 너비를 0으로 설정
+            });
+        </script>
+
+        <!-- 스와이퍼 -->
+        <script src="./js/swiper.js"></script>
+    </body>
+</html>
